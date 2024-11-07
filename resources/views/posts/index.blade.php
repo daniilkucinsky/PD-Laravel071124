@@ -10,6 +10,7 @@
                     <a href="/posts/{{ $post->id }}">Show</a>
                     <a href="/posts/{{ $post->id }}/edit">Edit</a>
                     <a href="/posts/{{ $post->id }}/destroy">Delete</a>
+                    <a href="/posts/{{ $post->id }}/create">Create</a>
                 </div>
             </li>
         @endforeach

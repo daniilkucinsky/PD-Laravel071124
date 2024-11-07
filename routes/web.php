@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('posts', [PostController::class, 'index']);
+Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 Route::post('posts', [PostController::class, 'store']);
 Route::get('posts/{id}/edit', [PostController::class, 'edit']);
 Route::put('posts/{id}/update', [PostController::class, 'update']);

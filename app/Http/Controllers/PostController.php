@@ -13,7 +13,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('posts.index');
+        return view('posts.index' , ['' => $posts]);
     }
 
     /**
@@ -79,7 +79,7 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-        $post->delete();
+        $post->delete($id);
         return redirect('/posts');
     }    
 }

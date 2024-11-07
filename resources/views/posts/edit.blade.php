@@ -1,7 +1,7 @@
 <x-app-layout>
     <h1>Edit post</h1>
 
-    <form action="" method="post">
+    <form action="/posts" method="post">
         @csrf
 
         <label for="title">Title: </label>
